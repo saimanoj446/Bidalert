@@ -6,8 +6,6 @@ buildCommand = "pip install -r requirements.txt"
 startCommand = "gunicorn server:app"
 healthcheckPath = "/"
 healthcheckTimeout = 100
-restartPolicyType = "on-failure"
-restartPolicyMaxRetries = 10
 
 [deploy.env]
 PYTHON_VERSION = "3.9" 
